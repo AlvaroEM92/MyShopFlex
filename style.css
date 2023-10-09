@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+}
+.hm{
+    width: 30%;
+    height: 170px;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.hm label{
+    font-weight: bold;
+    font-size: 80%;
+    opacity: 0.5;
+}
+.hm  label:hover{
+    opacity: 1;
+}
+.hm .labelw::after{
+    width: 2px;
+    border: 1px solid gray;
+    opacity: 0.5;
+    content: "";
+    margin: 0 5px 5px 5px;
+}
+.woman, .man{
+    display: none;
+}
+
+.hm input:checked ~ ul{
+    display: block;
+}
+.hm input:checked ~ ul label{
+    opacity: 1;
+}
+.hm ul{
+    display: none;
+    width: 85px;
+}
+.hm ul li a{
+    text-decoration: none;
+    color: black;
+}
+.hm ul li .promotions{
+    color: orangered;
+}
+ul li a:hover{
+    font-weight: bold;
+}
+
+
+.myshop{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.myshop .page{
+    display: flex;
+    flex-direction: row;
+    font-size: 50%;
+    margin-top: 1%;
+    width: 100%;
+    justify-content: center;
+}
+.myshop p{
+    margin-right: 1%;
+}
+.myshop .p-opa{
+    opacity: 0.5;
+}
+.search{
+    width: 40%;
+    height: 100px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.search .container-lens{
+    display: flex;
+    flex-direction: row;
+}
+.container-lens .lupen{
+    width: 150px;
+    border-bottom: 1px solid black;
+    margin-right: 5%;
+}
+.icon-lens{
+    width: 10px;
+    height: 10px;
+}
+.lens2{
+    display: flex;
+    flex-direction: row;
+    font-size: 50%;
+    width: 40%;
+    height: 50px;
+    margin-top: 5%;
+}
+.lens2 p{
+    margin: 1%;
+}
+main{
+    width: 100%;
+    height: 2150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    z-index: 0;
+}
+.shop{
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box{
+    width: 24%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box img{
+    width: 100%;
+    height: 300px;
+}
+.box p{
+    margin: 2%;
+    font-size: 50%;
+}
+.box .price{
+    margin: 1%;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter{
+    width: 330px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black ;
+    margin-bottom: 3%;
+}
+.newsletter .news{
+    font-size: 110%;
+}
+.newsletter .mailp{
+    font-size: 60%;
+    margin-top: 2%;
+}
+.contact{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60%;
+    border-top: 1px solid lightgray;
+}
+.mid-contact .number{
+    color: aqua;
+}
+.mid-contact img{
+    width: 10px;
+    height: 10px;
+}
+.mid-contact .ventol::after,.mid-contact .ventol::before{
+    width: 1px;
+    border: 1px solid black;
+    content: "";
+    margin: 0 5px 5px 5px;
+}
+.mid-contact p{
+    margin: 1%;
+}
+.mid-contact{
+    width: 25%;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.links{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid lightgrey;
+    padding-top: 4%;
+    margin-top: 2%;
+    border-bottom: 1px solid lightgray;
+}
+.links img{
+    width: 10px;
+    height: 10px;
+}
+.boxer{
+    width: 15%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    font-size: 70%;
+}
+.boxer h3{
+    margin-bottom: 7%;
+}
+.boxer p{
+    margin-bottom: 2%;
+}
+.final-links{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 60%;
+}
+.final-links img{
+    width: 10px;
+    height: 10px;
+}
+.final-links h3{
+    margin-bottom: 3%;
+    padding-top: 10%;
+}
+.final-links .finalprice{
+    font-weight: bold;
+    margin-top: 3%;
+}
+.final-links .finalboxer{
+    border-right:  1px solid lightgray;
+}
+.final-links div{
+    padding-right: 3%;
+}
